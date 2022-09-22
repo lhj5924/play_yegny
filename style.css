@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+:root {
+  --deepGreen:#0E0E0C;
+  --green:#305032;
+  --lightGreen:#6B8566;
+  --beige:#D8B370;
+  --orange:#E5842D;
+  --deepOrange:#DE5C1F;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  max-width: 500px;
+  height: 100vh;
+  position: relative;
+}
+
+
+header {
+  background-color: var(--orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 15px;
+  margin-bottom: 50px;
+}
+header > * {
+  width: 33%;
+}
+h1 {
+  text-align: center;
+  font-weight: 600;
+}
+header i:last-child {
+  text-align: right;
+}
+
+
+.search {
+  position: relative;
+  top: -70px;
+  display: flex;
+  justify-content: center;
+  width: 88%;
+  margin: 30px 30px -50px 30px;
+}
+.search__input {
+  border: 1px solid #999;
+  border-radius: 50px;
+  cursor:text;
+  transition: background 0.2s; 
+  text-decoration: rgba(0,0,0,0.5);
+  width:95%;
+  padding:15px;
+  font-size: 14px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.10), 0 10px 10px rgba(0,0,0,0.10);
+}
+input[type="text"]:focus {
+  background-color: var(--beige);
+  color: white;
+  border: none;
+}
+input:focus::placeholder {
+  color: white;
+}
+
+h2 {
+font-size: 30px;
+font-weight: 600;
+}
+
+/*Song of the Day*/
+
+.todaybook {
+  display: flex;
+  align-items: space-evenly;
+  position: relative;
+}
+.todaybook__img {
+  max-height: 200px;
+  width: auto;
+}
+
+.todaybook__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+.todaybook__info__title {
+  font-size: 30px;
+  margin: 0px;
+}
+.todaybook__info__artist {
+  font-weight: 400;
+  color: rgba(0,0,0,0.5);
+  margin: 0px;
+}
+
+.todaybook__info__rate {
+  margin: 0px;
+}
+.todaybook__info__rate > i {
+padding: 0px 1px 0px 0px;
+}
+
+.todaybook__info__keyword {
+  display: flex;
+  align-items: flex-start;
+  margin: 15px 0px;
+}
+.todaybook__info__keyword > span {
+  text-align: center;
+  font-weight: 600;
+  padding: 5px 15px;
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 5px;
+  margin: 0px 10px 0px 0px;
+}
+
+.todaybook__info__bookmark {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin-right: 20px;
+}
+.todaybook__info__bookmark__btn {
+  width:30px;
+  height:30px;
+  border-radius: 50%;
+  background-color: #D8B370;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.todaybook__info__bookmark__bookNow {
+  background-color: rgba(0,0,0,0.9);
+  padding: 5px 30px;
+  color: var(--beige);
+  border-radius: 5px;
+}
+
+
+/*Top List*/
+
+.box__TopList {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  height: 200px;
+}
+.content__box__TopList {
+  max-height: 100px;
+  width: 100px;
+  margin: 10px;
+}
+.content__box__TopList > img {
+  width: 100px;
+}
+
+
+.singer {
+  display: flex;
+  align-items: space-evenly;
+  position: relative;
+}
+.singer__img {
+  max-width: 200px;
+  height: fit-content;
+}
+
+.singer__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+.singer__info__title {
+  font-size: 30px;
+  margin: 0px;
+}
+.singer__info__artist {
+  font-weight: 400;
+  color: rgba(0,0,0,0.5);
+  margin: 0px;
+}
